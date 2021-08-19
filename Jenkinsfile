@@ -13,7 +13,7 @@ pipeline{
         stage('Build'){
             steps{
                 echo "Running Job: ${env.JOB_NAME}\n build: ${env.BUILD_ID}"
-                sh 'mvn -f Jenkins_Spring/pom.xml clean install package'
+                sh 'mvn -f ./pom.xml clean install package'
             }
 
         }
