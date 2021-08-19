@@ -4,9 +4,10 @@ pipeline{
         maven 'Maven_HOME'
     }
     stages{
-        stage('Checkout SCM')
+        stage('Checkout SCM'){
             steps{
                 git url: 'https://gitlab.com/123Balu42/Jenkins_Spring.git'
             }
+        }
     }
 }
