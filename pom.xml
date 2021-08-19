@@ -3,7 +3,7 @@
 	<groupId>jbr.springmvc</groupId>
 	<artifactId>spring-mvc-maven</artifactId>
 	<packaging>war</packaging>
-	<version>0.1</version>
+	<version>0.2-SNAPSHOT</version>
 	<name>spring-mvc-maven Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
@@ -14,7 +14,7 @@
 		<url>https://gitlab.com/123Balu42/Jenkins_Spring.git</url>
 		<connection>scm:git:https://gitlab.com/123Balu42/Jenkins_Spring.git</connection>
 		<developerConnection>scm:git:https://gitlab.com/123Balu42/Jenkins_Spring.git</developerConnection>
-		<tag>spring-mvc-maven-0.1</tag>
+		<tag>springmvc-maven-1.0</tag>
 	</scm>
 	<dependencies>
 		<dependency>
