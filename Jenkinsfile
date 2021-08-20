@@ -22,11 +22,6 @@ pipeline{
             }
 
         }
-        stage('Deploy'){
-            steps{
-                sh 'cp /var/jenkins_home/workspace/DemoStream_Pipeline/springmvc-maven/target/spring-mvc-maven.war /opt/tomcat/webapps'
-            }
-        }
         post{
             failure{
                 mail to: '123balu42@gmail.com' from: '123balu42@gmail.com'
