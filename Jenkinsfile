@@ -22,6 +22,11 @@ pipeline{
             }
 
         }
+        stage('Deploy'){
+            steps{
+                sh 'cp springmvc-maven/target TOMCAT_DIRECTORY/webapps/'
+            }
+        }
         post{
             failure{
                 mail to: '123balu42@gmail.com' from: '123balu42@gmail.com'
