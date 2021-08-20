@@ -24,7 +24,7 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                sh 'cp springmvc-maven/target TOMCAT_DIRECTORY/webapps/'
+                sh 'cp /var/jenkins_home/workspace/DemoStream_Pipeline/springmvc-maven/target/spring-mvc-maven.war /opt/tomcat/webapps'
             }
         }
         post{
